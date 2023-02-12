@@ -1,0 +1,66 @@
+.to-add-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 150px;
+    position: relative;
+    background-color: #0B0014;
+    border-radius: 5px;
+    position: relative;
+    top: 0px;
+    transition: ease-in 0.1s;
+}
+.to-add-card:hover{
+    transition: ease-in 0.1s;
+    top: -10px;
+}
+.to-add-card-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: solid white;
+    font-size: 50px;
+    color: white;
+    opacity: 0.7;
+    cursor: default;
+    
+    position: relative;
+    top: 20%;
+
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+                               
+}
+
+input{
+    margin-top: 10px;
+    width: 70%;
+    background-color: transparent;
+    border: none;
+    direction: none;
+    color: white;
+    text-align: center;
+}
+input::placeholder {
+    font-weight: bold;
+    opacity: .5;
+    color: white;
+    text-align: center;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

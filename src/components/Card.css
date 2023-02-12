@@ -1,0 +1,121 @@
+.outter-container{
+    height: 250px;
+    width: 150px;
+    position: relative;
+}
+.card-container{
+    height: 250px;
+    width: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    overflow-wrap: break-word;
+}
+.card{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+}
+.card-front{
+    background-color: #A61C3C;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    word-break: break-word;
+    font-family: monospace;
+    font-weight: bold;
+    color: #FBFFFE;
+    font-size: 1.5em;
+    text-align: center;
+}
+.card-back{
+    background-color: #F4AC45;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+    word-break: break-word;
+    font-family: monospace;
+    font-weight: bold;
+    color: #FBFFFE;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+img{
+    max-width: 150px;
+    max-width: 120px;
+    /* margin-bottom: auto; */
+    padding-top: 20px ;
+}
+
+/* Remove Card */
+
+
+h3{
+    left: 89%;
+    bottom: 85%;
+    position: absolute;
+    color: #FBFFFE;
+    opacity: 0.5;
+    z-index: 2;
+    font-family: monospace;
+
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+}
+
+
+/* Transitions */
+
+.flip-exit{
+    transform: rotateY(0deg);
+}
+
+.flip-exit-active{
+    transform: rotateY(180deg);
+    transition: transform 300ms;
+}
+
+.flip-exit-done{
+    transform: rotateY(180deg);
+}
+
+
+.flip-enter{
+    transform: rotateY(180deg);
+}
+
+.flip-enter-active{
+    transform: rotateY(0deg);
+    transition: transform 300ms;
+}
+
+.flip-enter-done{
+    transform: rotateY(0deg);
+}
+
+.toremove{
+    padding: 3px;
+    margin: 0;
+    /* position: absolute; */
+    top: 5px;
+    right: 10px;
+    opacity: 0.5;
+}
